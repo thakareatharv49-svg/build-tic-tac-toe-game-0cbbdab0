@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neon Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+  <main class="game">
+    <header class="hero">
+      <span class="eyebrow">ARCADE · 01</span>
+      <h1>Tic<span>·</span>Tac<span>·</span>Toe</h1>
+      <p>Classic strategy. Clean neon board. First to three wins.</p>
+    </header>
+    <section class="scoreboard" aria-label="Scoreboard">
+      <div class="score"><small>PLAYER X</small><strong id="score-x">0</strong></div>
+      <div class="turn" id="status">Player X's turn</div>
+      <div class="score"><small>PLAYER O</small><strong id="score-o">0</strong></div>
+    </section>
+    <section class="board-wrap">
+      <div id="board" class="board" aria-label="Tic-Tac-Toe board"></div>
+    </section>
+    <div class="actions">
+      <button id="restart" class="primary">New Round</button>
+      <button id="reset-score" class="secondary">Reset Score</button>
+    </div>
+    <p class="hint">Tip: control the center and create two threats at once.</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
